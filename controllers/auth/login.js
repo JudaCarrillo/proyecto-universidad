@@ -18,18 +18,10 @@ $(document).ready(function () {
       success: function (response) {
         if (response.success) {
           $(".form_login")[0].reset();
-          $("#message-login")
-            .removeClass("d-none")
-            .removeClass("border-danger text-danger")
-            .addClass("border-success text-success")
-            .text(response.message);
+          alert(response.message);
           window.location = "./views/menuView.php";
         } else {
-          $("#message-login")
-            .removeClass("d-none")
-            .removeClass("border-success text-success")
-            .addClass("border-danger text-danger")
-            .text(response.message);
+          alert(response.message);
         }
       },
     });
