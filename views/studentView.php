@@ -13,13 +13,32 @@
 
     <header>
         <img src="../assets/img/logo-senati.png" alt="Logo Senati">
-
     </header>
 
     <div class="img">
-        <img src="../assets/img/ASISTENCIA.png" alt="asistencia">
-        <img src="../assets/img/HORARIO_CLASE.png" alt="horario">
-        <img src="../assets/img/REGISTRAR.png" alt="registrar">
+        <div class="box">
+            <a href="">
+                <img src="../assets/img/horario.png" alt="registrar">
+                <p>Horario de clases</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="">
+                <img src="../assets/img/registrar.png" alt="horario">
+                <p>Registrar un Curso</p>
+            </a>
+        </div>
+
+        <div class="box">
+
+            <a href="">
+                <img src="../assets/img/notas.png" alt="asistencia">
+                <p>Mis Notas</p>
+            </a>
+        </div>
+
+
     </div>
 </body>
 

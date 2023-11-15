@@ -1,37 +1,43 @@
 body {
   margin: 0;
   padding: 0;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 header {
   background-color: black;
-  color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header img {
-  width: 180px;
+  height: 30px;
 }
 
 .img {
   width: 90%;
-
-  background: skyblue;
+  text-align: center;
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+.img p {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .img img {
-  width: 100px;
-  height: auto;
-  margin-right: 10px;
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
