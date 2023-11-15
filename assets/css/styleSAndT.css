@@ -22,6 +22,7 @@ header img {
 .img {
   width: 90%;
   text-align: center;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -34,16 +35,24 @@ header img {
 }
 
 .img img {
-  height: 100px;
+  height: 150px;
 }
 
 a {
   text-decoration: none;
   color: black;
 }
+<<<<<<< HEAD
 .icon{
   display: flex;
 }
 .icon i{
   background-color: black;
 }
+=======
+
+footer a {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+>>>>>>> 96ce9250c1d1c0e52d4d93eb39fa6c12947856d5
