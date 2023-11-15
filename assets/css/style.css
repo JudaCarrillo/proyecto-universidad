@@ -41,7 +41,4 @@ body {
   background-color: #2600ff;
   border-color: #2600ff;
 }
-.img {
-  display: flex;
-  justify-content: space-between;
-}
+
