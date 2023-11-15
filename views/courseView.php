@@ -47,8 +47,6 @@ if (!isset($_SESSION['nombre'])) {
                 <p>Mis Notas</p>
             </a>
         </div>
-
-
     </div>
 </body>
 
