@@ -69,6 +69,7 @@ CREATE TABLE Asistencia (
     idAsistencia INT AUTO_INCREMENT PRIMARY KEY,
     idAlumno INT,
     idMateria INT,
+    tipo VARCHAR(50) NOT NULL,
     FOREIGN KEY (idAlumno) REFERENCES Alumnos(idAlumno),
     FOREIGN KEY (idMateria) REFERENCES Materia(idMateria)
 );

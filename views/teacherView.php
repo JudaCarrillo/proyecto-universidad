@@ -24,7 +24,7 @@
         </div>
 
         <div class="box">
-            <a href="">
+            <a href="./attendanceView.php">
                 <img src="../assets/img/registrar.png" alt="horario">
                 <p>Registrar Asistencia</p>
             </a>
