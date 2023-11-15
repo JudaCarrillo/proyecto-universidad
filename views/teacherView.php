@@ -38,6 +38,14 @@
             </a>
         </div>
 
+        <div class="box">
+
+            <a href="https://senati.blackboard.com" target="_blank">
+                <img src="../assets/img/PlataformaExterna.png" alt="asistencia">
+                <p>Plataforma Externa</p>
+            </a>
+        </div>
+
     </div>
     <footer>
     <a href="../controllers/auth/logout.php" class="btn btn-dark">Cerrar Sesión</a>

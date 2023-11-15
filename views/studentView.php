@@ -37,7 +37,13 @@
                 <p>Mis Notas</p>
             </a>
         </div>
+        <div class="box">
 
+            <a href="https://senati.blackboard.com"  target="_blank">
+                <img src="../assets/img/PlataformaExterna.png" alt="asistencia">
+                <p>Plataforma Externa</p>
+            </a>
+        </div>
 
     </div>
 </body>
