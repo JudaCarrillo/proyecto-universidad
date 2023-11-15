@@ -22,6 +22,7 @@ header img {
 .img {
   width: 90%;
   text-align: center;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -34,10 +35,15 @@ header img {
 }
 
 .img img {
-  height: 100px;
+  height: 150px;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+footer a {
+  font-size: 1.4rem;
+  font-weight: 500;
 }

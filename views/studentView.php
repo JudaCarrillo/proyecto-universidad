@@ -34,7 +34,7 @@ if (!isset($_SESSION['nombre'])) {
         </div>
 
         <div class="box">
-            <a href="">
+            <a href="./courseView.php" target="">
                 <img src="../assets/img/registrar.png" alt="horario">
                 <p>Registrar un Curso</p>
             </a>
@@ -47,9 +47,11 @@ if (!isset($_SESSION['nombre'])) {
                 <p>Mis Notas</p>
             </a>
         </div>
-
-
     </div>
+
+    <footer>
+        <a href="../controllers/auth/logout.php" class="btn btn-dark">Cerrar Sesión</a>
+    </footer>
 </body>
 
 </html>

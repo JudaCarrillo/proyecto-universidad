@@ -31,17 +31,16 @@
         </div>
 
         <div class="box">
-
             <a href="">
                 <img src="../assets/img/notas.png" alt="asistencia">
-                <p>Gestioanar Notas</p>
+                <p>Gestionar Notas</p>
             </a>
         </div>
-
     </div>
+
     <footer>
-    <a href="../controllers/auth/logout.php" class="btn btn-dark">Cerrar Sesión</a>
-    <footer>
+        <a href="../controllers/auth/logout.php" class="btn btn-dark">Cerrar Sesión</a>
+    </footer>
 </body>
 
 </html>
