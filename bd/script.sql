@@ -45,7 +45,11 @@ CREATE TABLE Horario (
     idMateria INT,
     horaInicio TIME NOT NULL,
     horaFin TIME NOT NULL,
-    FOREIGN KEY (idMateria) REFERENCES Materia(idMateria)
+    idAula INT,
+    idLaboratorio INT,
+    FOREIGN KEY (idMateria) REFERENCES Materia(idMateria),
+    FOREIGN KEY (idAula) REFERENCES Aulas(idAula),
+    FOREIGN KEY (idLaboratorio) REFERENCES Laboratorios(idLaboratorio)
 );
 
 -- Tabla Aulas

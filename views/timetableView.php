@@ -28,18 +28,15 @@ if (!isset($_SESSION['nombre'])) {
     </header>
 
     <div class="course">
-        <h1>Lista de Cursos</h1>
+        <h1>Horario</h1>
 
         <div class="table-container">
             <table class="table table-responsive table-striped w-75">
                 <thead>
-                    <th>#</th>
-                    <th>Nombre</th>
-                    <th>Carrera</th>
+                    <th>Materia</th>
                     <th>Profesor</th>
                     <th>Hora Inicio</th>
                     <th>Hora Fin</th>
-                    <th>Opcion</th>
                 </thead>
 
                 <tbody></tbody>
@@ -52,8 +49,8 @@ if (!isset($_SESSION['nombre'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- script / mostrar materias -->
-    <script src="../controllers/course/updateTable.js"></script>
+    <!-- script / mostrar horario -->
+    <script src="../controllers/timetable/updateTable.js"></script>
 
 </body>
 
