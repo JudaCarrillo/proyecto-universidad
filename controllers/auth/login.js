@@ -19,7 +19,7 @@ $(document).ready(function () {
         if (response.success) {
           $(".form_login")[0].reset();
           alert(response.message);
-          window.location = "./views/menuView.php";
+          window.location = "./views/student.php";
         } else {
           alert(response.message);
         }
