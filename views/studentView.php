@@ -7,6 +7,7 @@
     <title>Senati</title>
     <!-- css -->
     <link rel="stylesheet" href="../assets/css/styleSAndT.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -14,6 +15,12 @@
     <header>
         <img src="../assets/img/logo-senati.png" alt="Logo Senati">
     </header>
+
+    <div class="icon">
+    <p>alumno</p>
+    <i class="bi bi-people"></i>
+        
+    </div>
 
     <div class="img">
         <div class="box">
@@ -39,13 +46,15 @@
         </div>
         <div class="box">
 
-            <a href="https://senati.blackboard.com"  target="_blank">
+            <a href="https://senati.blackboard.com" target="_blank">
                 <img src="../assets/img/PlataformaExterna.png" alt="asistencia">
                 <p>Plataforma Externa</p>
             </a>
         </div>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
