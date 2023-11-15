@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $usuario_data = $sentencia->fetch(PDO::FETCH_ASSOC);
 
         // Validando usuario con contraseña
-        if ($contrasena == $usuario_data['contraseña']) {
+        if ($usuario_data && $contrasena == $usuario_data['contraseña']) {
             $_SESSION['nombre'] = $usuario_data['nombre'];
             $response = [
                 'success' => true,
