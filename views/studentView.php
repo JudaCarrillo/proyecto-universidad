@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senati</title>
     <!-- css -->
-    <link rel="stylesheet" href="../assets/css/styleStudent.css">
+    <link rel="stylesheet" href="../assets/css/styleSAndT.css">
 </head>
 
 <body>
