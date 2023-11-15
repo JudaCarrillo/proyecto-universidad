@@ -36,18 +36,14 @@
                 <p>Gestionar Notas</p>
             </a>
         </div>
-<<<<<<< HEAD
-=======
 
         <div class="box">
-
             <a href="https://senati.blackboard.com" target="_blank">
                 <img src="../assets/img/PlataformaExterna.png" alt="asistencia">
                 <p>Plataforma Externa</p>
             </a>
         </div>
 
->>>>>>> ea29cfbf259ea269423f9b0a4799bed520cc7429
     </div>
 
     <footer>

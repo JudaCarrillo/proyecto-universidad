@@ -17,6 +17,8 @@ if (!isset($_SESSION['nombre'])) {
     <title>Senati</title>
     <!-- css -->
     <link rel="stylesheet" href="../assets/css/styleSAndT.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -24,6 +26,9 @@ if (!isset($_SESSION['nombre'])) {
     <header>
         <img src="../assets/img/logo-senati.png" alt="Logo Senati">
     </header>
+
+    <!-- acomodalo -->
+    <i class='bx bx-user'></i>
 
     <div class="img">
         <div class="box">
@@ -41,10 +46,16 @@ if (!isset($_SESSION['nombre'])) {
         </div>
 
         <div class="box">
-
             <a href="">
                 <img src="../assets/img/notas.png" alt="asistencia">
                 <p>Mis Notas</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="https://senati.blackboard.com" target="_blank">
+                <img src="../assets/img/PlataformaExterna.png" alt="asistencia">
+                <p>Plataforma Externa</p>
             </a>
         </div>
     </div>
