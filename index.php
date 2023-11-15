@@ -19,16 +19,22 @@
         <div class="text-center">
             <img src="./assets/img/logo-senati.png" alt="Logo" id="logo">
         </div>
-        <form id="loginForm">
+        <form class="login" id="loginForm" action="./controllers/auth/login.php" method="post">
             <div class="form-group">
-                <input type="email" class="form-control" id="correo" placeholder="Correo electrónico" required>
+                <input type="email" class="form-control" name="correo" id="correo" placeholder="Correo electrónico" required>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
+                <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Contraseña" required>
             </div>
             <button type="button" class="btn btn-primary btn-block" id="loginButton">Iniciar Sesión</button>
         </form>
     </div>
+
+    <!-- js / jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- js / login -->
+    <script src="./controllers/auth/login.js"></script>
+
 </body>
 
 </html>
