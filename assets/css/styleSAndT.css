@@ -42,17 +42,12 @@ a {
   text-decoration: none;
   color: black;
 }
-<<<<<<< HEAD
-.icon{
-  display: flex;
-}
-.icon i{
-  background-color: black;
-}
-=======
 
 footer a {
   font-size: 1.4rem;
   font-weight: 500;
 }
->>>>>>> 96ce9250c1d1c0e52d4d93eb39fa6c12947856d5
+.icon{
+  margin-left: auto;
+  font-size: 2rem;
+}

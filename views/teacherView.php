@@ -7,6 +7,8 @@
     <title>Senati</title>
     <!-- css -->
     <link rel="stylesheet" href="../assets/css/styleSAndT.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -14,7 +16,9 @@
     <header>
         <img src="../assets/img/logo-senati.png" alt="Logo Senati">
     </header>
-
+    <div class="icon">
+        <i class='bx bx-user'> Profesor</i>
+    </div>
     <div class="img">
         <div class="box">
             <a href="">

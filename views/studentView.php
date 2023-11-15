@@ -17,12 +17,8 @@ if (!isset($_SESSION['nombre'])) {
     <title>Senati</title>
     <!-- css -->
     <link rel="stylesheet" href="../assets/css/styleSAndT.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-=======
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
->>>>>>> 96ce9250c1d1c0e52d4d93eb39fa6c12947856d5
 </head>
 
 <body>
@@ -31,16 +27,11 @@ if (!isset($_SESSION['nombre'])) {
         <img src="../assets/img/logo-senati.png" alt="Logo Senati">
     </header>
 
-<<<<<<< HEAD
-    <div class="icon">
-    <p>alumno</p>
-    <i class="bi bi-people"></i>
-        
-    </div>
-=======
     <!-- acomodalo -->
-    <i class='bx bx-user'></i>
->>>>>>> 96ce9250c1d1c0e52d4d93eb39fa6c12947856d5
+    <div class="icon">
+        <i class='bx bx-user'> Alumno</i>
+    </div>
+   
 
     <div class="img">
         <div class="box">
@@ -64,10 +55,7 @@ if (!isset($_SESSION['nombre'])) {
             </a>
         </div>
 
-<<<<<<< HEAD
-=======
         <div class="box">
->>>>>>> 96ce9250c1d1c0e52d4d93eb39fa6c12947856d5
             <a href="https://senati.blackboard.com" target="_blank">
                 <img src="../assets/img/PlataformaExterna.png" alt="asistencia">
                 <p>Plataforma Externa</p>
@@ -75,13 +63,9 @@ if (!isset($_SESSION['nombre'])) {
         </div>
     </div>
 
-<<<<<<< HEAD
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-=======
     <footer>
         <a href="../controllers/auth/logout.php" class="btn btn-dark">Cerrar Sesión</a>
     </footer>
->>>>>>> 96ce9250c1d1c0e52d4d93eb39fa6c12947856d5
 </body>
 
 </html>
