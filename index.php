@@ -26,7 +26,7 @@
             <div class="form-group">
                 <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Contraseña" required>
             </div>
-            <button type="button" class="btn btn-primary btn-block" id="loginButton">Iniciar Sesión</button>
+            <button type="submit" class="btn btn-primary btn-block" id="loginButton">Iniciar Sesión</button>
         </form>
     </div>
 

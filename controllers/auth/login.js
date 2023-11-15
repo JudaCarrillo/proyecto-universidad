@@ -17,9 +17,14 @@ $(document).ready(function () {
       dataType: "json",
       success: function (response) {
         if (response.success) {
-          $(".form_login")[0].reset();
+          $(".login")[0].reset();
           alert(response.message);
-          window.location = "./views/student.php";
+
+          if (response.type == "profesor") {
+            window.location = "./views/teacherView.php";
+          } else {
+            window.location = "./views/studentView.php";
+          }
         } else {
           alert(response.message);
         }
