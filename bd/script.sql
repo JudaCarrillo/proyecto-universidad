@@ -106,16 +106,48 @@ CREATE TABLE Notas (
     FOREIGN KEY (idAlumno) REFERENCES Alumnos(idAlumno)
 );
 
--- INSERT INTO Carrera (nombre) VALUES ('Diseño Grafico'),('Ingieneria de Software con IA');
--- INSERT INTO Materia(nombre,idCarrera,idProfesor)VALUES('Diseño de packaging',1,1),('Diseño y programación de bases de datos con SQL',2,2),('Desarrollo de Aplicaiones Web',2,2);
--- INSERT INTO Horario(idMateria,horaInicio,horaFin)VALUES(1,GETDATE(),GETDATE()),(2,GETDATE(),GETDATE());
--- INSERT INTO Aulas(nombre)VALUES('Aula1'),('Aula2');
--- INSERT INTO Alumnos_Materias(idAlumno,idMateria)VALUES(1,1),(2,2),(3,3);
--- INSERT INTO Laboratorios(nombre)VALUES('Laboratorio1'),('Laboratorio2');
--- INSERT INTO Asistencia(idAlumno,idMateria)VALUES(1,1),(2,2),(3,3);
--- INSERT INTO CronogramaPagos(idCarrera,Costo)VALUES(1,500),(2,600);
--- INSERT INTO SAA(idAlumno)VALUES(1);
--- INSERT INTO PlataformaExterna(idAlumno)VALUES(1);
--- INSERT INTO Notas(idMateria,idAlumno,nota)VALUES(1,1,20),(2,2,20),(3,3,20);
+/* Registros */
+-- CARRERAS
+INSERT INTO Carrera (nombre) VALUES ('Diseño Grafico'), ('Ing. de Sofware con IA');
+
+-- PROFESOR
 INSERT INTO Profesor (nombre,correo,contraseña) VALUES ('Walter Coaguila','242424@senati.edu.pe','242424'),('Adrian Gonzales','242425@senati.edu.pe','242425');
+
+-- ALUMNOS
 INSERT INTO Alumnos(nombre,correo,contraseña) VALUES ('Zavala Jhosue','141414@senati.pe','141414'),('Angeles Joel','141415@senati.pe','141415'),('Carrillo Juda','141416@senati.pe','141416');
+
+-- MATERIAS
+INSERT INTO Materia (nombre, idCarrera, idProfesor) VALUES 
+(),
+(),
+()
+INSERT INTO Materia (nombre, idCarrera, idProfesor) VALUES 
+(),
+(),
+()
+
+-- AULA
+-- INSERT INTO Aulas(nombre)VALUES('Aula1'),('Aula2');
+
+-- LABORATORIO
+-- INSERT INTO Laboratorios(nombre)VALUES('Laboratorio1'),('Laboratorio2');
+
+-- HORARIOS
+INSERT INTO Horario (idMateria, horaInicio, horaFin, idAula, idLaboratorio)
+
+
+-- CRONOGRAMA DE PAGOS
+-- INSERT INTO CronogramaPagos(idCarrera,Costo)VALUES(1,500),(2,600);
+
+-- SAA
+-- INSERT INTO SAA(idAlumno)VALUES(1);
+
+-- PLATAFORMA EXTERNA
+-- INSERT INTO PlataformaExterna(idAlumno)VALUES(1);
+
+
+-- INSERT INTO Materia(nombre,idCarrera,idProfesor)VALUES('Diseño de packaging',1,1),('Diseño y programación de bases de datos con SQL',2,2),('Desarrollo de Aplicaiones Web',2,2);
+-- INSERT INTO Horario(idMateria,horaInicio,horaFin)VALUES(1,CURRENT_TIME(),GETDATE()),(2,GETDATE(),GETDATE());
+
+
+
