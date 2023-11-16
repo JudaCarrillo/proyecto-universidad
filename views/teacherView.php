@@ -21,21 +21,21 @@
     </div>
     <div class="img">
         <div class="box">
-            <a href="">
+            <a href="./timetable_tView.php">
                 <img src="../assets/img/horario.png" alt="registrar">
                 <p>Horario de clases</p>
             </a>
         </div>
 
         <div class="box">
-            <a href="">
+            <a href="./attendanceView.php">
                 <img src="../assets/img/registrar.png" alt="horario">
                 <p>Registrar Asistencia</p>
             </a>
         </div>
 
         <div class="box">
-            <a href="">
+            <a href="./mnmCalificationView.php">
                 <img src="../assets/img/notas.png" alt="asistencia">
                 <p>Gestionar Notas</p>
             </a>

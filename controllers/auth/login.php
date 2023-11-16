@@ -40,6 +40,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Validando usuario con contraseña
         if ($usuario_data && $contrasena == $usuario_data['contraseña']) {
             $_SESSION['nombre'] = $usuario_data['nombre'];
+
+            if ($tipo_usuario == 'profesor') {
+                $_SESSION['id'] = $usuario_data['idProfesor'];
+            } else {
+                $_SESSION['id'] = $usuario_data['idAlumno'];
+            }
+
             $response = [
                 'success' => true,
                 'message' => 'Iniciando sesión...',
