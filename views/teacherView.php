@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,6 +8,9 @@
     <title>Senati</title>
     <!-- css -->
     <link rel="stylesheet" href="../assets/css/styleSAndT.css">
+    <link rel="stylesheet" href="../assets/css/button.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -14,7 +18,12 @@
     <header>
         <img src="../assets/img/logo-senati.png" alt="Logo Senati">
     </header>
-
+    <div class="icon">
+        <i class='bx bx-user'> Profesor</i>
+    </div>
+    
+     <!-- Incluyendo dcapture -->
+    <?php include '../controllers/capture/captureTeacher.php' ?>
     <div class="img">
         <div class="box">
             <a href="./timetable_tView.php">
@@ -47,8 +56,11 @@
     </div>
 
     <footer>
-        <a href="../controllers/auth/logout.php" class="btn btn-dark">Cerrar Sesión</a>
+
+        <a href="../controllers/auth/logout.php" class="button">Cerrar Sesión</a>
+        
     </footer>
+    
 </body>
 
 </html>

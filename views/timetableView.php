@@ -31,8 +31,8 @@ if (!isset($_SESSION['nombre'])) {
         <h1>Horario</h1>
 
         <div class="table-container">
-            <table class="table table-responsive table-striped w-75">
-                <thead>
+            <table class="table-dark table table-responsive table-striped w-75">
+                <thead class="thead-dark">
                     <th>Materia</th>
                     <th>Profesor</th>
                     <th>Hora Inicio</th>

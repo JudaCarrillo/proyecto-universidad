@@ -30,9 +30,9 @@ if (!isset($_SESSION['nombre'])) {
     <div class="course">
         <h1>Horario</h1>
 
-        <div class="table-container">
-            <table class="table table-responsive table-striped w-75">
-                <thead>
+        <div class="table-container " >
+            <table class=" table-dark table table-responsive table-striped w-75" >
+                <thead >
                     <th>Materia</th>
                     <th>Salón</th>
                     <th>Hora Inicio</th>
