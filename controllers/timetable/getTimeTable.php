@@ -7,17 +7,14 @@ $pdo = $con->getConexion();
 
 $idAlumno = $_SESSION['id'];
 
-$sql = 'SELECT Materia.idMateria, Materia.nombre, Carrera.nombre AS nombreCarrera, Profesor.nombre AS nombreProfesor,
-        DATE_FORMAT(Horario.horaInicio, "%Y-%m-%d %H:%i:%s") AS fechaHoraInicio,
-        DATE_FORMAT(Horario.horaFin, "%Y-%m-%d %H:%i:%s") AS fechaHoraFin
+$sql = 'SELECT Materia.idMateria, Materia.nombre, Carrera.nombre AS nombreCarrera, Profesor.nombre AS nombreProfesor, Horario.horaInicio AS fechaHoraInicio, Horario.horaFin AS fechaHoraFin
         FROM Materia
         INNER JOIN Carrera ON Materia.idCarrera = Carrera.idCarrera
         INNER JOIN Profesor ON Materia.idProfesor = Profesor.idProfesor
         INNER JOIN Horario ON Materia.idMateria = Horario.idMateria
-        WHERE Materia.idMateria NOT IN (
-            SELECT idMateria FROM Alumnos_Materias WHERE idAlumno = :idAlumno
-        )
-        ORDER BY fechaHoraInicio';
+        INNER JOIN Alumnos_Materias ON Materia.idMateria = Alumnos_Materias.idMateria
+        WHERE Alumnos_Materias.idAlumno = :idAlumno
+        ORDER BY Horario.horaInicio';
 
 try {
     $sentencia = $pdo->prepare($sql);

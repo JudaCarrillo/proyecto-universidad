@@ -39,6 +39,18 @@ CREATE TABLE Alumnos_Materias (
     FOREIGN KEY (idMateria) REFERENCES Materia(idMateria)
 );
 
+-- Tabla Aulas
+CREATE TABLE Aulas (
+    idAula INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL
+);
+
+-- Tabla Laboratorios
+CREATE TABLE Laboratorios (
+    idLaboratorio INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL
+);
+
 -- Tabla Horario
 CREATE TABLE Horario (
     idHorario INT AUTO_INCREMENT PRIMARY KEY,
@@ -50,18 +62,6 @@ CREATE TABLE Horario (
     FOREIGN KEY (idMateria) REFERENCES Materia(idMateria),
     FOREIGN KEY (idAula) REFERENCES Aulas(idAula),
     FOREIGN KEY (idLaboratorio) REFERENCES Laboratorios(idLaboratorio)
-);
-
--- Tabla Aulas
-CREATE TABLE Aulas (
-    idAula INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL
-);
-
--- Tabla Laboratorios
-CREATE TABLE Laboratorios (
-    idLaboratorio INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL
 );
 
 -- Tabla Asistencia
@@ -117,37 +117,38 @@ INSERT INTO Profesor (nombre,correo,contraseña) VALUES ('Walter Coaguila','2424
 INSERT INTO Alumnos(nombre,correo,contraseña) VALUES ('Zavala Jhosue','141414@senati.pe','141414'),('Angeles Joel','141415@senati.pe','141415'),('Carrillo Juda','141416@senati.pe','141416');
 
 -- MATERIAS
-INSERT INTO Materia (nombre, idCarrera, idProfesor) VALUES 
-(),
-(),
-()
-INSERT INTO Materia (nombre, idCarrera, idProfesor) VALUES 
-(),
-(),
-()
+INSERT INTO Materia(nombre,idCarrera,idProfesor)VALUES
+('Diseño de packaging',1,1),
+('Diseño Digital',1,1),
+('Realidad Virtual y Aumentada',1,1);
+INSERT INTO Materia(nombre,idCarrera,idProfesor)VALUES
+('POO',1,1),
+('Diseño y programación de bases de datos con SQL',2,2)
+,('Desarrollo de Aplicaiones Web',2,2);
 
 -- AULA
--- INSERT INTO Aulas(nombre)VALUES('Aula1'),('Aula2');
+INSERT INTO Aulas(nombre)VALUES('Aula1'),('Aula2');
 
 -- LABORATORIO
--- INSERT INTO Laboratorios(nombre)VALUES('Laboratorio1'),('Laboratorio2');
+INSERT INTO Laboratorios(nombre)VALUES('Laboratorio1'),('Laboratorio2');
 
 -- HORARIOS
-INSERT INTO Horario (idMateria, horaInicio, horaFin, idAula, idLaboratorio)
-
+INSERT INTO Horario (idMateria, horaInicio, horaFin, idAula, idLaboratorio) VALUES 
+(1, '08:00:00', '10:00:00', 1, null),
+(2, '11:00:00', '13:00:00', null, 1),
+(3, '14:00:00', '16:00:00', 2, null),
+(4, '16:00:00', '17:00:00', null, 2),
+(5, '17:00:00', '18:00:00', 1, null),
+(6, '18:00:00', '19:00:00', 2, null);
 
 -- CRONOGRAMA DE PAGOS
--- INSERT INTO CronogramaPagos(idCarrera,Costo)VALUES(1,500),(2,600);
+INSERT INTO CronogramaPagos (idCarrera, Costo) VALUES (1, 500.0), (2, 600.0);
 
 -- SAA
--- INSERT INTO SAA(idAlumno)VALUES(1);
+INSERT INTO SAA (idAlumno) VALUES (1);
 
 -- PLATAFORMA EXTERNA
--- INSERT INTO PlataformaExterna(idAlumno)VALUES(1);
-
-
--- INSERT INTO Materia(nombre,idCarrera,idProfesor)VALUES('Diseño de packaging',1,1),('Diseño y programación de bases de datos con SQL',2,2),('Desarrollo de Aplicaiones Web',2,2);
--- INSERT INTO Horario(idMateria,horaInicio,horaFin)VALUES(1,CURRENT_TIME(),GETDATE()),(2,GETDATE(),GETDATE());
+INSERT INTO PlataformaExterna (idAlumno) VALUES (1);
 
 
 

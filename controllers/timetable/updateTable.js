@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  window.obtenerHorario_T = function () {
+  window.obtenerHorario = function () {
     $.ajax({
       type: "GET",
       url: "../controllers/timetable/getTimeTable.php",
@@ -25,5 +25,5 @@ $(document).ready(function () {
     });
   };
 
-  obtenerHorario_T();
+  obtenerHorario();
 });
