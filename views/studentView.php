@@ -6,6 +6,7 @@ if (!isset($_SESSION['nombre'])) {
     header('Location: ../index.php');
     exit;
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -17,12 +18,12 @@ if (!isset($_SESSION['nombre'])) {
     <title>Senati</title>
     <!-- css -->
     <link rel="stylesheet" href="../assets/css/styleSAndT.css">
+    <link rel="stylesheet" href="../assets/css/button.css">
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-
     <header>
         <img src="../assets/img/logo-senati.png" alt="Logo Senati">
     </header>
@@ -31,7 +32,9 @@ if (!isset($_SESSION['nombre'])) {
     <div class="icon">
         <i class='bx bx-user'> Alumno</i>
     </div>
-   
+
+     <!-- Incluyendo capture -->
+    <?php include '../controllers/capture/captureStudent.php' ?>
 
     <div class="img">
         <div class="box">
@@ -64,7 +67,7 @@ if (!isset($_SESSION['nombre'])) {
     </div>
 
     <footer>
-        <a href="../controllers/auth/logout.php" class="btn btn-dark">Cerrar Sesión</a>
+        <a href="../controllers/auth/logout.php" class="button">Cerrar Sesión</a>
     </footer>
 </body>
 

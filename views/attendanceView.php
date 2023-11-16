@@ -33,7 +33,7 @@ if (!isset($_SESSION['nombre'])) {
         <h1>Registro de Asistencia</h1>
 
         <div class="table-container">
-            <table class="table table-responsive table-striped w-75">
+            <table class="table-dark table table-responsive table-striped w-75">
                 <thead>
                     <th>Materia</th>
                     <th>Alumno</th>
