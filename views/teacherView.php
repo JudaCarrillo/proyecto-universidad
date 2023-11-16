@@ -22,7 +22,7 @@
         <i class='bx bx-user'> Profesor</i>
     </div>
     
-     <!-- Incluyendo capture -->
+     <!-- Incluyendo dcapture -->
     <?php include '../controllers/capture/captureTeacher.php' ?>
     <div class="img">
         <div class="box">
